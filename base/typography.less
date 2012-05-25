@@ -1,0 +1,160 @@
+/**
+ * Typography
+ *
+ * This LESS file defines the baseline, color, font-size, and other typographical
+ * styles for text elements.
+ */
+
+/* Settings */
+
+@import 'variables.less';
+
+/*
+@baseline: @baseline;
+
+@body-color: @body-color;
+@body-font-family: @body-font-family;
+@body-font-size: @body-font-size;
+@body-accent-color: @body-accent-color;
+
+@header-color: @header-clor;
+@header-font-family: @header-font-family;
+@header-font-weight: @header-font-weight;
+*/
+
+/* Base */
+
+html, body {
+    font-family: @body-font-family;
+    color: @body-color;
+    font-size: @body-font-size;
+    .lhs;
+}
+
+/* Block-level */
+
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, table, form, pre{
+    .mbs;
+}
+
+/* Headers */
+
+.all-headers{
+    color: @header-color;
+    font-family: @header-font-family;
+    font-weight: @header-font-weight;
+}
+h1, .alpha{
+    .all-headers;
+    font-size: @body-font-size * 2.5;
+    .lhd;
+}
+h2, .beta{
+    .all-headers;
+    font-size: @body-font-size * 2;
+    .lhd;
+}
+h3, .gamma{
+    .all-headers;
+    font-size: @body-font-size * 1.5;
+    .lhd;
+}
+h4, .delta{
+    .all-headers;
+    font-size: @body-font-size * 1.5;
+    .lhd;
+    .mbn;
+}
+h5, .epsilon{
+    .all-headers;
+    font-size: @body-font-size * 1.2;
+    .lhs;
+    .mbn
+}
+h6, .zeta{
+    .all-headers;
+    font-size: @body-font-size * 1;
+    .lhs;
+    .mbn;
+}
+
+/* Headers (above scale) */
+
+.giga{
+    .all-headers;
+    font-size: @body-font-size * 6;
+    line-height: @baseline * 4;
+}
+.mega{
+    .all-headers;
+    font-size: @body-font-size * 5;
+    line-height: @baseline * 3;
+}
+.kilo{
+    .all-headers;
+    font-size: @body-font-size * 4;
+    line-height: @baseline * 3;
+}
+
+/* Headers (below scale) */
+
+.milli{
+    .all-headers;
+    font-size: @body-font-size * 0.8;
+}
+
+/* Text */
+
+a{
+    color: @body-accent-color;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+
+}
+a:focus{
+
+}
+small {
+    font-size: 80%;
+}
+sup, sub {
+    font-size: 80%;
+    .lhn;
+}
+sup {
+    vertical-align: super;
+}
+sub {
+    vertical-align: sub;
+}
+blockquote{
+    font-style: italic;
+    .pls;
+}
+pre, code, kbd{
+    font-family: Consolas, "Courier New", Courier, mono;
+    font-size: @body-font-size * 0.8;
+    color: lighten(@body-color, 0.3);
+}
+strong{
+    color: darken(@body-color, 0.3);
+    font-weight: bold;
+}
+em{
+    font-style: italic;
+}
+ol, ul {
+    .pls;
+    ol,ul {
+        .mbn;
+    }
+}

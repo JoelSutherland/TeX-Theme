@@ -1,0 +1,29 @@
+* {
+	.border-box();
+}
+body,html {
+	background: #ddd;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: black;
+	.lhs;
+	padding: @baseline/4 0;
+	.box-shadow(0 0 10px rgba(0,0,0,.7));
+}
+
+.document {
+	margin: @baseline * 3 auto;
+	.pad;
+	max-width: 960px;
+	background: white;
+	.box-shadow(0 0 30px rgba(0,0,0,.3));
+
+	article {
+		text-align: justify;
+	}
+}
